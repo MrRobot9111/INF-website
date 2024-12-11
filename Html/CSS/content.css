@@ -1,0 +1,81 @@
+:root{
+    --h1_size: 54px;
+    --p_size: 22px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+#hero-text-div {
+    margin-left: 60px;
+    margin-top: 125px;
+}
+
+#introductionary-paragrahp-div {
+    width: 37%;
+    margin-top: 80px;
+}
+
+
+
+.list-start-paragraphs-div {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+}
+
+.star-list-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-self: flex-start;
+    gap: 10px;
+
+}
+
+.down-arrow {
+    position: absolute;
+    bottom: 0px;
+}
+
+p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: var(--p_size);
+}
+
+h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: var(--h1_size);
+}
+
+.pic-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+
+#hero-page-background{
+    z-index: -99;
+    position: absolute;
+    top: 0;
+    height: 100%;
+}
+
+#hero-page-logo{
+    position: absolute;
+    top: 8cm;
+    right: 2cm;
+    
+}
+
+
+
