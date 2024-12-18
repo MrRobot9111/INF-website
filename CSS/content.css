@@ -79,6 +79,10 @@
     opacity: 1;  /* Fully visible */
 }
 
+.scrolling-down {
+    
+}
+
 /* Keyframes for fade-in and fade-out animation */
 @keyframes fade-in-out {
     0% {

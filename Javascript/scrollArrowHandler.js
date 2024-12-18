@@ -13,27 +13,34 @@ path.classList.add("default");  // Add the 'default' class to start with fade ef
 
 // Handle scroll event - but look into how to determine the scroll direction
 document.addEventListener("wheel", (event) => {
-    progress += event.deltaY * 0.0025;
-    progress = Math.max(0, Math.min(1, progress));
 
-    // Update the stroke-dashoffset to trace the path
-    path.style.strokeDashoffset = pathLength * (1 - progress);
-
-    // Toggle between states based on progress
-    if (progress === 0) {
-        path.classList.remove("scrolling");
-        path.classList.add("default");
-        path.style.strokeDashoffset = 0;
-    } else if (progress === 1) {
-        currentPageIndex++;
-
-        // Add a delay before navigating to the new page
-        setTimeout(() => {
-            window.location.href = "http://127.0.0.1:5500/Code/INF-website/Html/" + links[currentPageIndex];
-        }, 300); // 3000 milliseconds (3 seconds) delay
-
-    } else {
-        path.classList.add("scrolling");
-        path.classList.remove("default");
+    if (event.deltaY > 0) {
+        progress += event.deltaY * 0.0025;
+        progress = Math.max(0, Math.min(1, progress));
+    
+        // Update the stroke-dashoffset to trace the path
+        path.style.strokeDashoffset = pathLength * (1 - progress);
+    
+        // Toggle between states based on progress
+        if (progress === 0) {
+            path.classList.remove("scrolling");
+            path.classList.add("default");
+            path.style.strokeDashoffset = 0;
+        } else if (progress === 1) {
+            currentPageIndex++;
+    
+            // Add a delay before navigating to the new page
+            setTimeout(() => {
+                window.location.href = "http://127.0.0.1:5500/Code/INF-website/Html/" + links[currentPageIndex];
+            }, 300); // 3000 milliseconds (3 seconds) delay
+    
+        } else {
+            path.classList.add("scrolling");
+            path.classList.remove("default");
+        }
+    } else if (event.deltaY < 0) {
+        
     }
+
+
 });
