@@ -1,0 +1,35 @@
+h1{
+    margin-bottom: 10%;
+}
+
+.pic-text{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+p{
+    margin-left: 50px;
+    margin-right: 50px; 
+    
+}
+
+.information-section{
+    position: absolute;
+    right: 0%;
+}
+
+
+/* General paragraph styling */
+.styled-paragraph {
+    line-height: 1.6; /* Line spacing for readability */
+    margin-bottom: 20px; /* Adds spacing between logical text blocks */
+    background-color: var(--grey) ;
+}
+
+/* For breaking logical blocks of text */
+.styled-paragraph span {
+    display: block; /* Makes each span a block element */
+    margin-bottom: 15px; /* Adds spacing between spans */
+}
+
+

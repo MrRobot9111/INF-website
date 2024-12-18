@@ -3,19 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tycho Brahe</title>
+    <title></title> <!--Adjusted with webName script-->
+    <link rel="stylesheet" href="../CSS/site-var.css">
     <link rel="stylesheet" href="../CSS/navigation-style.css">
     <link rel="stylesheet" href="../CSS/content.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/global-styling.css">
     <script src="../JavaScript/fadeScipt.js" defer></script>
+    <script src="../Javascript/scrollArrowHandler.js" defer></script>
+    <script src="../Javascript/webName.js" defer></script>
 </head>
 <body>
     
     <nav class = "nav-bar">
         <a href="" id="Hem"><p>Hem</p></a>
-        <a href="" id="Teknikprogrammet"><p>Teknikprogrammet</p></a>
+        <a href="../Html/Teknikprogrammet.html" id="Teknikprogrammet"><p>Teknikprogrammet</p></a>
         <a href="" id="Inriktning"><p>Inriktning</p></a>
         <a href=""id="Kurser"><p>Kurser</p></a>
         <a href="" id="Lärare"><p>Lärare</p></a>
@@ -50,10 +54,17 @@
             
             <!-- This will fade in and out and it will always be present at the bottom of each page -->
 
-            <div class="down-arrow">
-                               
-                    <img class="down-arrow" src="../Images/Icons/down_arrow.svg">
-               
+            <div class="progress-container">
+                <svg class="arrow-path" width="70" height="70" viewBox="0 0 200 200">
+                    <!-- Define the arrow path -->
+                    <path
+                        d="M50 50 L100 150 L150 50"
+                        stroke="black"
+                        fill="none"
+                        stroke-width="8"
+                        stroke-linecap="round"
+                    />
+                </svg>
             </div>
 
         </div>

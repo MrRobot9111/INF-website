@@ -26,7 +26,7 @@ nav a:hover {
 }
 
 #cta-button {
-    background-color: #E35205; 
+    background-color: var(--orange); 
     border: none;
     color: white;
     padding: 7px 30px;
