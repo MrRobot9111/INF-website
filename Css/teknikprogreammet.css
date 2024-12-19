@@ -1,29 +1,59 @@
 h1{
+    margin-top: 5%;
     margin-bottom: 10%;
+    margin-left: 225px;
 }
 
 .pic-text{
     display: flex;
     flex-direction: row;
-    margin-bottom: 50px;
+    width: 80%;
+    background-color: var(--grey) ;
+    border-radius: 40px;
 }
-p{
+
+#pic-text-samuel {
+    margin-bottom: 100px;
+    margin-left: 225px;
+    margin-right: 50px;
+
+}
+
+#pic-text-rebecka {
+    margin-bottom: 250px;
+    margin-left: 300px;
+    margin-right: 50px;
+}
+
+#pic-samuel{
+    width: 100%;
+}
+
+#pic-rebecka{
+    width: 100%;
+}
+
+
+p {
     margin-left: 50px;
     margin-right: 50px; 
     
 }
 
 .information-section{
-    position: absolute;
     right: 0%;
 }
 
 
 /* General paragraph styling */
 .styled-paragraph {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
     line-height: 1.6; /* Line spacing for readability */
     margin-bottom: 20px; /* Adds spacing between logical text blocks */
-    background-color: var(--grey) ;
 }
 
 /* For breaking logical blocks of text */

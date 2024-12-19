@@ -2,7 +2,7 @@
 body {
     margin: 0px;
     padding: 0px;
-    overflow: hidden; /* Prevent scrolling on the page */
+    /* overflow: hidden; /* Prevent scrolling on the page */
 }
 
 p {
