@@ -8,6 +8,8 @@ path.style.strokeDashoffset = 0;  // This will be controlled by CSS
 
 let progress = 0;
 let currentPageIndex = 0;
+console.log("CurrentPageIndex: " + currentPageIndex)
+console.log("Links: " + links)
 
 path.classList.add("default");  // Add the 'default' class to start with fade effect
 
@@ -31,7 +33,8 @@ document.addEventListener("wheel", (event) => {
     
             // Add a delay before navigating to the new page
             setTimeout(() => {
-                window.location.href = "http://127.0.0.1:5500/Code/INF-website/Html/" + links[currentPageIndex];
+                window.location.href = "http://127.0.0.1:5500/Html/" + links[currentPageIndex];
+                //window.location.href = "http://127.0.0.1:5500/Html/Teknikprogrammet.html";
             }, 300); // 3000 milliseconds (3 seconds) delay
     
         } else {
@@ -44,3 +47,5 @@ document.addEventListener("wheel", (event) => {
 
 
 });
+
+// The error is that the varibles are not reset and the script is not loaded until every html is.
