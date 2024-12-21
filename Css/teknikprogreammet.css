@@ -1,65 +1,41 @@
 h1{
-    margin-top: 5%;
-    margin-bottom: 10%;
-    margin-left: 225px;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    margin-left: 12%;
 }
 
 .pic-text{
     display: flex;
     flex-direction: row;
-    width: 80%;
+    width: 70%;
     background-color: var(--grey) ;
     border-radius: 40px;
 }
 
 #pic-text-samuel {
-    margin-bottom: 100px;
-    margin-left: 225px;
-    margin-right: 50px;
-
+    margin-bottom: 25px;
+    margin-left: 12%;
 }
 
 #pic-text-rebecka {
-    margin-bottom: 250px;
-    margin-left: 300px;
-    margin-right: 50px;
+    margin-left: 16%;
 }
 
 #pic-samuel{
-    width: 100%;
+    width: 70%;
 }
 
 #pic-rebecka{
-    width: 100%;
+    width: 70%;
 }
 
 
 p {
     margin-left: 50px;
     margin-right: 50px; 
-    
 }
 
 .information-section{
     right: 0%;
 }
-
-
-/* General paragraph styling */
-.styled-paragraph {
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-
-    line-height: 1.6; /* Line spacing for readability */
-    margin-bottom: 20px; /* Adds spacing between logical text blocks */
-}
-
-/* For breaking logical blocks of text */
-.styled-paragraph span {
-    display: block; /* Makes each span a block element */
-    margin-bottom: 15px; /* Adds spacing between spans */
-}
-
 

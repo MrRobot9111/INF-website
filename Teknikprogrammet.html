@@ -5,16 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <script src="Javascript/webName.js" defer></script>
+    <script src="Javascript/scrollArrowHandler.js" defer></script>
+    <script src="Javascript/fadeScipt.js" defer></script>
     <link rel="stylesheet" href="CSS/site-var.css">
     <link rel="stylesheet" href="Css/navigation-style.css">
-    <link rel="stylesheet" href="Css/teknikprogreammet.css">
     <link rel="stylesheet" href="Css/global-styling.css">
+    <link rel="stylesheet" href="Css/teknikprogreammet.css">
 </head>
 <body>
     <nav class = "nav-bar">
-        <a href="Html/index.html" id="Hem"><p>Hem</p></a>
+        <a href="index.html" id="Hem"><p>Hem</p></a>
         <a href="" id="Teknikprogrammet"><p>Teknikprogrammet</p></a>
-        <a href="Html/inriktning.html" id="Inriktning"><p>Inriktning</p></a>
+        <a href="inriktning.html" id="Inriktning"><p>Inriktning</p></a>
         <a href=""id="Kurser"><p>Kurser</p></a>
         <a href="" id="Lärare"><p>Lärare</p></a>
         <a href=""><button id="cta-button">Ansök Nu</button></a> 
@@ -38,6 +40,34 @@
             </p>
             <img id="pic-rebecka" src="Images/Teknikprogramet-bild-2.png" alt="">
 
+        </div>
+
+        <div class="progress-container">
+            <div class="progress-container">
+                <svg class="arrow-path" width="70" height="70" viewBox="0 0 200 200">
+                    <path
+                    d="M50 70 L100 130 L150 70"
+                        stroke="black"
+                        fill="none"
+                        stroke-width="20"
+                        stroke-linecap="round"
+                    />   
+                </svg>
+
+                <svg class="arrow-path-backwards" width="70" height="70" viewBox="0 0 200 200">
+                    <path
+                        d="M50 130 L100 70 L150 130"
+                        stroke="black"
+                        fill="none"
+                        stroke-width="20"
+                        stroke-linecap="round"
+                    />
+                </svg>
+                
+                
+                             
+                
+            </div>
         </div>
 
     </section>

@@ -1,0 +1,28 @@
+ .pic-text{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--grey);
+    border-radius: 30px;
+    justify-self: center;
+    width: 80%;
+    
+ }
+ section{
+    margin-top: 2%;
+    justify-self: center;
+    width: 50%;
+    
+
+ }
+
+ #inrikting-text{
+    justify-self: center;
+    background: var(--grey);
+    margin-left: 50px;
+    margin-right:50px ;
+    border-radius: 30px;
+ }
+ h1{
+    justify-self: center;
+ }
+

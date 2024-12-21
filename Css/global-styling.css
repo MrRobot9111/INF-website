@@ -20,3 +20,62 @@ h1 {
 }
 
 
+.progress-container {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    margin-left: 2%;
+    left: 0px;
+    bottom: 0px;
+}
+
+/* The 'default' class handles the initial fading and the black color */
+.default {
+    stroke-dasharray: 300;  /* Adjust to the path length if necessary */
+    stroke-dashoffset: 300;  /* Hide stroke initially */
+    transition: stroke-dashoffset 0.1s ease;  /* Smooth transition */
+    stroke: black;  /* Black color for default state */
+    animation: fade-in-out 3s infinite;  /* Fade-in-out animation */
+    opacity: 1;  /* Fully visible by default */
+}
+
+/* The 'scrolling' class will be applied once the user starts scrolling */
+.scrolling {
+    stroke-dasharray: 300;  /* Adjust to the path length */
+    stroke-dashoffset: 300;  /* Hide stroke initially */
+    transition: stroke-dashoffset 0.1s ease;  /* Smooth transition */
+    stroke: var(--orange);  /* Orange color when scrolling */
+    animation: none;  /* Stop fading effect */
+    opacity: 1;  /* Fully visible */
+}
+
+
+.scrolling-down {
+    
+}
+
+/* General paragraph styling */
+.styled-paragraph {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    line-height: 1.6; /* Line spacing for readability */
+}
+
+/* For breaking logical blocks of text */
+.styled-paragraph span {
+    display: block; /* Makes each span a block element */
+}
+
+/* Keyframes for fade-in and fade-out animation */
+@keyframes fade-in-out {
+    0% {
+        opacity: 0;  /* Fully transparent */
+    }
+    50% {
+        opacity: 1;  /* Fully visible */
+    }
+    100% {
+        opacity: 0;  /* Fully transparent again */
+    }
+}
