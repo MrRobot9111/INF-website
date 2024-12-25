@@ -1,44 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <script src="Javascript/webName.js" defer></script>
-    <link rel="stylesheet" href="CSS/site-var.css">
-    <link rel="stylesheet" href="Css/navigation-style.css">
-    <link rel="stylesheet" href="Css/global-styling.css">
-    <link rel="stylesheet" href="Css/Inriktning.css" >
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-
-</head>
-<body>
-    <nav class = "nav-bar">
-        <a href="" id="Hem"><p>Hem</p></a>
-        <a href="Teknikprogrammet.html" id="Teknikprogrammet"><p>Teknikprogrammet</p></a>
-        <a href="Inriktning.html" id="Inriktning"><p>Inriktning</p></a>
-        <a href="Kurser.html"id="Kurser"><p>Kurser</p></a>
-        <a href="" id="Lärare"><p>Lärare</p></a>
-        <a href=""><button id="cta-button">Ansök Nu</button></a> 
-    </nav>
-
-    <section>
-        <h1 id="h1-Inrikting">Vad är Informations- och medieteknik?</h1>
-        <div class= "pic-text">
-            
-            <img src="Images/Inrikting.png" alt="Image of Computer Student">
-            <div class="textContainer">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title></title>
+      <script src="Javascript/webName.js" defer></script>
+      <script src="Javascript/scrollArrowHandler.js" defer></script>
+      <link rel="stylesheet" href="Css/site-var.css">
+      <link rel="stylesheet" href="Css/navigation-style.css">
+      <link rel="stylesheet" href="Css/global-styling.css">
+      <link rel="stylesheet" href="Css/Inriktning.css" >
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+      <script hr></script>
+   </head>
+   <body>
+      <nav class = "nav-bar">
+         <a href="" id="Hem">
+            <p>Hem</p>
+         </a>
+         <a href="Teknikprogrammet.html" id="Teknikprogrammet">
+            <p>Teknikprogrammet</p>
+         </a>
+         <a href="Inriktning.html" id="Inriktning">
+            <p>Inriktning</p>
+         </a>
+         <a href="Kurser.html"id="Kurser">
+            <p>Kurser</p>
+         </a>
+         <a href="" id="Lärare">
+            <p>Lärare</p>
+         </a>
+         <a href=""><button id="cta-button">Ansök Nu</button></a> 
+      </nav>
+      <section>
+         <h1 id="h1-Inrikting">Vad är Informations- och medieteknik?</h1>
+         <div class= "pic-text">
+         <img src="Images/Inrikting.png" alt="Image of Computer Student">
+         <div class="textContainer">
             <p id="inrikting-text">
-                Inriktningen fokuserar på att du ska bli en duktig programmerare som får goda kunskaper inom datorkommunikation och gränssnittsdesign.<br>  
-                Du lär dig utveckla mjukvara från grunden genom att skriva programkod där problemlösning är i fokus, för att sedan arbeta med mer avancerade algoritmer, både befintliga och egna.<br><br>  
-                Du får möjlighet att utveckla program i olika programspråk och miljöer, mot olika målenheter och operativsystem.<br>  
-                Under utbildningen kommer du även att fördjupa dig inom prestandakrävande 2D- och 3D-tekniker, som används bland annat i spel- och webbutveckling.
-                </p>
-            </div>
-            <div>
-            </div>
-        </div>
-    </section>
-
-</body>
+               Inriktningen fokuserar på att du ska bli en duktig programmerare som får goda kunskaper inom datorkommunikation och gränssnittsdesign.<br>  
+               Du lär dig utveckla mjukvara från grunden genom att skriva programkod där problemlösning är i fokus, för att sedan arbeta med mer avancerade algoritmer, både befintliga och egna.<br><br>  
+               Du får möjlighet att utveckla program i olika programspråk och miljöer, mot olika målenheter och operativsystem.<br>  
+               Under utbildningen kommer du även att fördjupa dig inom prestandakrävande 2D- och 3D-tekniker, som används bland annat i spel- och webbutveckling.
+            </p>
+         </div>
+      </section>
+      <!--Arrow-Nav-->
+      <div class="progress-container">
+         <svg class="arrow-path" width="70" height="70" viewBox="0 0 200 200">
+            <path
+               d="M50 70 L100 130 L150 70"
+               stroke="black"
+               fill="none"
+               stroke-width="20"
+               stroke-linecap="round"
+               />
+         </svg>
+         <svg class="arrow-path-backwards" width="70" height="70" viewBox="0 0 200 200">
+            <path
+               d="M50 130 L100 70 L150 130"
+               stroke="black"
+               fill="none"
+               stroke-width="20"
+               stroke-linecap="round"
+               />
+         </svg>
+      </div>
+   </body>
 </html>
