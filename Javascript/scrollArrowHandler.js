@@ -88,7 +88,7 @@ document.addEventListener("wheel", (event) => {
             scrollLock = true; // Activate the lock
             updatePageIndex(currentPageIndex).then(() => {
                 setTimeout(() => {
-                    window.location.href = "http://127.0.0.1:5500/" + links[currentPageIndex];
+                    window.location.href = `${window.location.origin}/${links[currentPageIndex]}`;
                 }, 300);
             }).finally(() => {
                 setTimeout(() => {
@@ -130,7 +130,7 @@ document.addEventListener("wheel", (event) => {
             scrollLock = true; // Activate the lock
             updatePageIndexBackwards(currentPageIndex).then(() => {
                 setTimeout(() => {
-                    window.location.href = "http://127.0.0.1:5500/" + links[currentPageIndex];
+                    window.location.href = `${window.location.origin}/${links[currentPageIndex]}`;
                 }, 300);
             }).finally(() => {
                 setTimeout(() => {
