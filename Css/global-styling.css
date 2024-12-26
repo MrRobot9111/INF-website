@@ -19,6 +19,13 @@ h1 {
     font-size: var(--h1_size);
 }
 
+h2{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: medium;
+    font-size: var(--h2_size);
+}
+
 
 .progress-container {
     display: flex;
