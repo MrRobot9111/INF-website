@@ -1,7 +1,7 @@
 const path = document.querySelector(".arrow-path path");
 const pathBackWards = document.querySelector(".arrow-path-backwards path");
 
-const links = ["index.html", "Teknikprogrammet.html", "Inriktning.html"];
+const links = ["index.html", "Teknikprogrammet.html", "Inriktning.html", "Kurser.html", "Lärare.html"];
 
 const pathLength = path.getTotalLength();
 const pathLengthBackwards = pathBackWards.getTotalLength();
