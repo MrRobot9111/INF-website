@@ -5,3 +5,11 @@
     --grey: #EEEEEE;
     --h2_size: 30px;
 }
+
+@media screen and (max-width: 1920px) {
+    :root {
+        --h1_size: 42px; /* Reduced further for smaller screens */
+        --p_size: 1.1em; /* Slightly smaller paragraph size */
+        --h2_size: 28px; /* Adjust h2 size proportionally */
+    }
+}

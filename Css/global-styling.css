@@ -24,6 +24,7 @@ h2{
     font-weight: 500;
     font-style: medium;
     font-size: var(--h2_size);
+    margin: 1%;
 }
 
 
