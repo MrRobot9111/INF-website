@@ -18,7 +18,8 @@ h1{
 }
 
 #pic-text-rebecka {
-    margin-left: 16%;
+    width: 60%;
+    margin-left: 26%;
 }
 
 #pic-samuel{
@@ -39,3 +40,21 @@ p {
     right: 0%;
 }
 
+/* General paragraph styling */
+.styled-paragraph {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 1920px) {
+    #pic-text-rebecka {
+        width: 60%;
+        margin-left: 26%;
+    }
+    #pic-text-samuel {
+        margin-bottom: 25px;
+        margin-left: 12%;
+    }
+    
+}

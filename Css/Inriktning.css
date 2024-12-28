@@ -1,28 +1,43 @@
  .pic-text{
-    display: flex;
-    flex-direction: column;
-    background-color: var(--grey);
-    border-radius: 30px;
-    justify-self: center;
-    width: 80%;
-    
+   display: flex;
+   flex-direction: column;
+   background-color: var(--grey);
+   border-radius: 30px;
+   justify-self: center;
+   width: 70%;
+   height: auto;
  }
- section{
-    margin-top: 2%;
-    justify-self: center;
-    width: 50%;
-    
 
+ section {
+   align-self: center;
+   align-items: center;
+   justify-self: center;
+   width: 50%;
  }
 
  #inrikting-text{
-    justify-self: center;
-    background: var(--grey);
-    margin-left: 50px;
-    margin-right:50px ;
-    border-radius: 30px;
+   justify-self: center;
+   background: var(--grey);
+   margin-left: 2%;
+   margin-right: 2%;
+   border-radius: 30px;
  }
+
  h1{
-    justify-self: center;
+   justify-self: center;
  }
+
+ @media screen and (min-width: 2000px)  {
+
+   section {
+      width: 50%;
+   }
+
+   .pic-text {
+      width: 80%;
+   }
+
+ }
+
+
 

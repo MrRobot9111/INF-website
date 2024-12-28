@@ -65,7 +65,6 @@
     max-height: 80%; /* Ensure the modal does not exceed the viewport height */
     width: 60%; /* Set a reasonable width */
     z-index: 18;
-
 }
 
 .expanded-information-div {
