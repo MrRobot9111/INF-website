@@ -47,6 +47,7 @@ p {
     justify-content: space-around;
 }
 
+/* Just for testing */ 
 @media screen and (max-width: 1920px) {
     #pic-text-rebecka {
         width: 60%;
