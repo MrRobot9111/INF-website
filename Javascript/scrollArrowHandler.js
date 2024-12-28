@@ -57,6 +57,13 @@ let scrollLock = false; // Initialize the scroll lock
 document.addEventListener("wheel", (event) => {
     if (scrollLock) return; // If the lock is active, ignore the event
 
+    const scrim = document.getElementById("scrim");
+    
+    // Check if the scrim exists and is visible
+    if (scrim && getComputedStyle(scrim).display !== "none") {
+        return; // Do nothing if the scrim is visible
+    }
+
     if (event.deltaY > 0) {
         // Reset backward progress
         progressBackwards = 0;

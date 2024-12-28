@@ -187,6 +187,7 @@ const courseData = {
   };
   
   // Select elements
+  const scrim = document.getElementById('scrim');
   const cards = document.querySelectorAll(".plus-icon");
   const expandedSection = document.querySelector(".expanded-information");
   const exitIcon = document.querySelector(".exit-icon");
@@ -200,6 +201,11 @@ const courseData = {
   // Show course details when a card is clicked
   cards.forEach((card) => {
     card.addEventListener("click", () => {
+
+      // Add a scrim to the backgrund
+
+      scrim.classList.toggle('active'); // Toggle the scrim visibility
+
       const courseId = card.getAttribute("data-course");
       const courseInfo = courseData[courseId];
   
@@ -217,5 +223,6 @@ const courseData = {
   // Hide the expanded section when the exit icon is clicked
   exitIcon.addEventListener("click", () => {
     expandedSection.classList.add("hide-more-information-card");
+    scrim.classList.remove('active');
   });
   
