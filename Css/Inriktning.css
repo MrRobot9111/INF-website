@@ -1,3 +1,4 @@
+ 
  .pic-text{
    display: flex;
    flex-direction: column;
@@ -6,17 +7,16 @@
    justify-self: center;
    width: 70%;
    height: auto;
+   margin: auto;
  }
 
+ /* Problem with this styling in Firefox but not in Brave */ 
  section {
-   align-self: center;
-   align-items: center;
-   justify-self: center;
+   margin: auto;
    width: 50%;
  }
 
  #inrikting-text{
-   justify-self: center;
    background: var(--grey);
    margin-left: 2%;
    margin-right: 2%;
@@ -24,7 +24,7 @@
  }
 
  h1{
-   justify-self: center;
+   text-align: center;
  }
 
  @media screen and (min-width: 2000px)  {
