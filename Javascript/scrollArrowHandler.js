@@ -1,5 +1,6 @@
 const path = document.querySelector(".arrow-path path");
 const pathBackWards = document.querySelector(".arrow-path-backwards path");
+const currentNavItem = null;
 
 const links = ["index.html", "Teknikprogrammet.html", "Inriktning.html", "Kurser.html", "Larare.html"]; // The problem is the "ä"
 
@@ -10,6 +11,7 @@ const pathLengthBackwards = pathBackWards.getTotalLength();
 const getCurrentPageIndex = () => {
     const currentFileName = window.location.pathname.split("/").pop(); // Get the current file name
     const index = links.indexOf(currentFileName); // Find the index of the file name in the links array
+
     return index !== -1 ? index : 0; // Default to 0 if not found
 };
 
@@ -18,6 +20,31 @@ let currentPageIndex = getCurrentPageIndex();
 localStorage.setItem("currentPageIndex", currentPageIndex); // Store it for consistency
 
 console.log("Initial Page Index (based on URL): " + currentPageIndex);
+
+document.addEventListener("DOMContentLoaded", () => {
+    const waitForNavBar = () => {
+        const navBar = document.querySelector('.nav-bar');
+        if (navBar) {
+            const hightlightCurrentPage = () => {
+                const currentFileName = window.location.pathname.split("/").pop().split("?")[0].split("#")[0];
+                console.log("Extracted filename:", currentFileName);
+
+                const currentNavItem = document.querySelector(`#${CSS.escape(currentFileName)}`);
+                if (currentNavItem) {
+                    currentNavItem.classList.add("underline-current-nav-link");
+                } else {
+                    console.error("No matching nav item found for the current page.");
+                }
+            };
+
+            hightlightCurrentPage();
+        } else {
+            setTimeout(waitForNavBar, 50); // Retry until nav-bar is loaded
+        }
+    };
+
+    waitForNavBar();
+});
 
 // Update page index for forward navigation
 const updatePageIndex = (index) => {

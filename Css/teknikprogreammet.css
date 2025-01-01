@@ -30,8 +30,9 @@ h1{
     width: 70%;
 }
 
+/* Causing trouble inside the nav-bar */
 
-p {
+div p {
     margin-left: 50px;
     margin-right: 50px; 
 }

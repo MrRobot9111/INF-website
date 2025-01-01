@@ -19,10 +19,37 @@ nav a {
     text-decoration: none;
     color: black;
     font-weight: 600;
+    position: relative; /* Needed for positioning the ::after element */
 }
 
-nav a:hover {
-    color: #b84000;
+nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 17px; /* Distance from the text */
+    width: 0%; /* Start with 0% width */
+    height: 2px; /* Thickness */
+    background-color: var(--orange); /* Orange color for underline */
+    transform: scaleX(0); /* Hidden by default */
+    transform-origin: left;
+    transition: all 0.3s ease; /* Smooth animation for both hover and active states */
+}
+
+nav a:hover::after {
+    width: 100%; /* Extend underline width on hover */
+    transform: scaleX(1); /* Show the underline */
+}
+
+.underline-current-nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 17px; /* Distance from the text */
+    width: 30%; /* Full underline width for the current item */
+    height: 2px; /* Thickness */
+    background-color: var(--orange); /* Orange color for underline */
+    transform: scaleX(1); /* Ensure it stays visible */
+    transform-origin: left;
+    transition: all 0.3s ease; /* Smooth animation */
 }
 
 #cta-button {

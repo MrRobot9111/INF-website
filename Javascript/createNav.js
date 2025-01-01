@@ -4,11 +4,11 @@ navBar.className = 'nav-bar';
 
 // Define the links and their corresponding text
 const navItems = [
-    { href: 'index.html', id: 'Hem', text: 'Hem' },
-    { href: 'Teknikprogrammet.html', id: 'Teknikprogrammet', text: 'Teknikprogrammet' },
-    { href: 'Inriktning.html', id: 'Inriktning', text: 'Inriktning' },
-    { href: 'Kurser.html', id: 'Kurser', text: 'Kurser' },
-    { href: 'Larare.html', id: 'Lärare', text: 'Lärare' },
+    { href: 'index.html', id: 'index.html', text: 'Hem' },
+    { href: 'Teknikprogrammet.html', id: 'Teknikprogrammet.html', text: 'Teknikprogrammet' },
+    { href: 'Inriktning.html', id: 'Inriktning.html', text: 'Inriktning' },
+    { href: 'Kurser.html', id: 'Kurser.html', text: 'Kurser' },
+    { href: 'Larare.html', id: 'Larare.html', text: 'Lärare' },
 ];
 
 // Create the links and add them to the nav
