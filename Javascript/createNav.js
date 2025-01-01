@@ -8,7 +8,7 @@ const navItems = [
     { href: 'Teknikprogrammet.html', id: 'Teknikprogrammet', text: 'Teknikprogrammet' },
     { href: 'Inriktning.html', id: 'Inriktning', text: 'Inriktning' },
     { href: 'Kurser.html', id: 'Kurser', text: 'Kurser' },
-    { href: 'Lärare.html', id: 'Lärare', text: 'Lärare' },
+    { href: 'Larare.html', id: 'Lärare', text: 'Lärare' },
 ];
 
 // Create the links and add them to the nav

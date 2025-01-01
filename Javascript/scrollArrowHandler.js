@@ -1,7 +1,7 @@
 const path = document.querySelector(".arrow-path path");
 const pathBackWards = document.querySelector(".arrow-path-backwards path");
 
-const links = ["index.html", "Teknikprogrammet.html", "Inriktning.html", "Kurser.html", "Lärare.html"];
+const links = ["index.html", "Teknikprogrammet.html", "Inriktning.html", "Kurser.html", "Larare.html"]; // The problem is the "ä"
 
 const pathLength = path.getTotalLength();
 const pathLengthBackwards = pathBackWards.getTotalLength();
@@ -22,6 +22,7 @@ console.log("Initial Page Index (based on URL): " + currentPageIndex);
 // Update page index for forward navigation
 const updatePageIndex = (index) => {
     return new Promise((resolve) => {
+        console.log("Updated Page Index: " + currentPageIndex);
         currentPageIndex = Math.min(currentPageIndex + 1, links.length - 1); // Ensure it doesn't go out of bounds
         localStorage.setItem("currentPageIndex", currentPageIndex); // Save the updated index
         console.log("Updated Page Index: " + currentPageIndex);
