@@ -7,19 +7,22 @@
       <!--Adjusted with webName script-->
       <link rel="stylesheet" href="Css/site-var.css">
       <link rel="stylesheet" href="Css/navigation-style.css">
-      <link rel="stylesheet" href="Css/content.css">
       <link rel="stylesheet" href="Css/global-styling.css">
+      <link rel="stylesheet" href="Css/content.css">
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="CSS/global-styling.css">
-      <script src="Javascript/fadeScipt.js" defer></script>
       <script src="Javascript/scrollArrowHandler.js" defer></script>
       <script src="Javascript/webName.js" defer></script>
       <script src="Javascript/createNav.js" defer></script>
    </head>
    <header>
-    
+      <nav class="mobile-nav">
+         <img id="tycho-brahe-nav-icon" src="Images/Icons/mobile-tycho-brahe-nav.svg">
+         <h2>INF</h2>
+         <img id="hamburger-menu-icon" src="Images/Icons/White-Hamburger.svg">
+      </nav>
    </header>
    <body>
       
@@ -46,7 +49,7 @@
          </div>
          <!-- This will fade in and out and it will always be present at the bottom of each page -->
          <!--Arrow-Nav-->
-         <section>
+         <section id="desktop-scroll-page-switch-section">
             <div class="progress-container">
                <svg class="arrow-path" width="70" height="70" viewBox="0 0 200 200">
                   <path
@@ -73,5 +76,37 @@
             <img id="hero-page-logo"src="Images/Icons/Tycho_Brahe_smaller.svg" alt="">
          </div>
       </section>
+      <!-- Mobile page navigation -->
+      <section class="mobile-page-navigation">
+         <svg class="arrow-back" width="70" height="70" viewBox="0 0 200 200">
+            <path
+               d="M50 70 L100 130 L150 70"
+               stroke="black"
+               fill="none"
+               stroke-width="20"
+               stroke-linecap="round"
+               />
+         </svg>
+         <p>Hem</p>
+         <svg class="arrow-foreward" width="70" height="70" viewBox="0 0 200 200">
+            <path
+               d="M50 130 L100 70 L150 130"
+               stroke="black"
+               fill="none"
+               stroke-width="20"
+               stroke-linecap="round"
+               />
+         </svg>
+      </section>
+      <footer class="mobile-footer">
+         <div class="footer-information-div">
+            <p>Besöksadress</p>
+            <p>Studievägen 2, 251 89 <br> Helsingborg</p>
+         </div>
+         <div class="footer-information-div">
+            <p>Kontakta oss</p>
+            <p>042-10 50 00</p>
+         </div>     
+      </footer>
    </body>
 </html>

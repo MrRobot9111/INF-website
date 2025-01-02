@@ -55,3 +55,93 @@
     
 }
 
+/* Phone layout */
+
+@media screen and (max-width: 500px) {
+
+    #hero-page-logo {
+        display: none;
+    }
+    #hero-page-background {
+        display: none;
+    }
+    .nav-bar {
+        display: none;
+    }
+
+    #desktop-scroll-page-switch-section {
+        display: none;
+    }
+
+    .mobile-nav {
+        position: sticky;
+        top: 0px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+        padding-bottom: 1.25%;
+        padding-top: 1.25%;
+        background-color: var(--tycho-nav-blue);
+    }
+
+    .mobile-nav h2 {
+        color: white;
+    }
+
+    .hero-section {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #hero-text-div {
+        margin-left: 2.5%;
+        margin-top: 10%;
+    }
+
+    #introductionary-paragrahp-div {
+        margin-top: 5%; /* Half of the distance between the navigation bar */
+        width: 100%;
+    }
+    
+    .list-start-paragraphs-div {
+        margin-top: 5%;
+    }
+
+    .mobile-page-navigation {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .mobile-page-navigation p {
+        font-weight: 600;
+        padding: 2.5% 7.5%;
+        background-color: var(--website-grey);
+        border-radius: 20px;
+    }
+
+    .mobile-footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: var(--tycho-nav-blue);
+        height: 2.5%;
+    }
+
+    .footer-information-div { 
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobile-footer p {
+        color: white;
+    }
+
+}
+
+
