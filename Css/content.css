@@ -59,12 +59,24 @@
 
 @media screen and (max-width: 500px) {
 
+    html, body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
     #hero-page-logo {
         display: none;
     }
     #hero-page-background {
         display: none;
     }
+
+    #hero-page-background, #hero-page-logo {
+        max-width: 100%;
+        overflow: hidden;
+    }
+
     .nav-bar {
         display: none;
     }
@@ -72,6 +84,12 @@
     #desktop-scroll-page-switch-section {
         display: none;
     }
+
+    .page-container {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh; /* Minimum height of the viewport */
+     }
 
     .mobile-nav {
         position: sticky;
@@ -94,6 +112,7 @@
     .hero-section {
         display: flex;
         flex-direction: column;
+        flex: 1;
 
     }
 
@@ -130,12 +149,20 @@
         flex-direction: row;
         justify-content: space-around;
         background-color: var(--tycho-nav-blue);
-        height: 2.5%;
+        height: auto;
+        padding: 10px;
+        color: white;
     }
 
     .footer-information-div { 
         display: flex;
         flex-direction: column;
+    }
+
+    .footer-information-div p:first-of-type,
+    .footer-information-div p:nth-of-type(2) {
+        margin-top: 5px;
+        margin-bottom: 5px; /* Adjust this value as needed */
     }
 
     .mobile-footer p {
