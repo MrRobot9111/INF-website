@@ -55,6 +55,20 @@
     
 }
 
+/* Solve this later by loading in the navbar just as you do on desktop but on phone instead - first fixt the hamburger menu */
+
+.mobile-nav {
+    display: none;
+}
+
+.mobile-footer {
+    display: none;
+}
+
+.mobile-page-navigation {
+    display: none;
+}
+
 /* Phone layout */
 
 @media screen and (max-width: 500px) {
