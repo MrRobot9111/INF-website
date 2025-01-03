@@ -1,5 +1,4 @@
- 
- .pic-text{
+ .pic-text {
    display: flex;
    flex-direction: column;
    background-color: var(--grey);
@@ -10,34 +9,57 @@
    margin: auto;
  }
 
- /* Problem with this styling in Firefox but not in Brave */ 
+ /* Problem with this styling in Firefox but not in Brave */
  section {
    margin: auto;
    width: 50%;
  }
 
- #inrikting-text{
+ #inrikting-text {
    background: var(--grey);
    margin-left: 2%;
    margin-right: 2%;
    border-radius: 30px;
  }
 
- h1{
+
+
+ h1 {
    text-align: center;
  }
 
- @media screen and (min-width: 2000px)  {
-
-   section {
-      width: 50%;
-   }
+ @media screen and (max-width: 500px) {
 
    .pic-text {
-      width: 80%;
+     width: 100%;
+
    }
+
+   section {
+     margin-top: 10%;
+     width: 94%;
+
+   }
+
+   .mobile-page-navigation{
+    margin-top:2px;
+   }
+
+   h1{
+    text-align: left;
+   }
+
 
  }
 
+ @media screen and (min-width: 2000px) {
 
+   section {
+     width: 50%;
+   }
 
+   .pic-text {
+     width: 80%;
+   }
+
+ }

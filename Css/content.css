@@ -131,6 +131,7 @@
     }
 
     #hero-text-div {
+        margin-right: 2.5%;
         margin-left: 2.5%;
         margin-top: 10%;
     }
@@ -144,44 +145,7 @@
         margin-top: 5%;
     }
 
-    .mobile-page-navigation {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-    }
 
-    .mobile-page-navigation p {
-        font-weight: 600;
-        padding: 2.5% 7.5%;
-        background-color: var(--website-grey);
-        border-radius: 20px;
-    }
-
-    .mobile-footer {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        background-color: var(--tycho-nav-blue);
-        height: auto;
-        padding: 10px;
-        color: white;
-    }
-
-    .footer-information-div { 
-        display: flex;
-        flex-direction: column;
-    }
-
-    .footer-information-div p:first-of-type,
-    .footer-information-div p:nth-of-type(2) {
-        margin-top: 5px;
-        margin-bottom: 5px; /* Adjust this value as needed */
-    }
-
-    .mobile-footer p {
-        color: white;
-    }
 
 }
 
