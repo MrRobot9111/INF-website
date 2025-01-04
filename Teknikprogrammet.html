@@ -14,11 +14,16 @@
       <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
    </head>
    <header>
-    
+      <nav class="mobile-nav">
+         <img id="tycho-brahe-nav-icon" src="Images/Icons/mobile-tycho-brahe-nav.svg">
+         <h2>INF</h2>
+         <img id="hamburger-menu-icon" src="Images/Icons/White-Hamburger.svg">
+      </nav>
    </header>
    <body>
       <section class="information-section" >
             <h1 id="mobile-header">Teknikprogrammet</h1>
+            <h1 id="desktop-header">Vad är teknikprogrammet?</h1>
             <div class="pic-text" id="pic-text-samuel">
                <img id="pic-samuel" src="Images/Teknikprogrammet-bild-1.png" alt="">
                <p class="styled-paragraph">
@@ -34,7 +39,7 @@
                </p>
                <img id="pic-rebecka" src="Images/Teknikprogramet-bild-2.png" alt="">
             </div>
-         <h1 id="desktop-header">Vad är teknikprogrammet?</h1>
+
          
          <!--Arrow-Nav desktop-->
          <div class="progress-container">
@@ -59,5 +64,36 @@
          </div>
       </section>
       <!-- Mobile page navigation -->   
+      <section class="mobile-page-navigation">
+         <svg class="arrow-back" width="70" height="70" viewBox="0 0 200 200">
+            <path
+               d="M50 70 L100 130 L150 70"
+               stroke="black"
+               fill="none"
+               stroke-width="20"
+               stroke-linecap="round"
+               />
+         </svg>
+         <p>Teknikprogrammet</p>
+         <svg class="arrow-foreward" width="70" height="70" viewBox="0 0 200 200">
+            <path
+               d="M50 130 L100 70 L150 130"
+               stroke="black"
+               fill="none"
+               stroke-width="20"
+               stroke-linecap="round"
+               />
+         </svg>
+      </section>
+      <footer class="mobile-footer">
+         <div class="footer-information-div">
+            <p>Besöksadress</p>
+            <p>Studievägen 2, 251 89 <br> Helsingborg</p>
+         </div>
+         <div class="footer-information-div">
+            <p>Kontakta oss</p>
+            <p>042-10 50 00</p>
+         </div>     
+      </footer>
    </body>
 </html>
