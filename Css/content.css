@@ -145,6 +145,13 @@
         margin-top: 5%;
     }
 
+    .mobile-footer {
+        display: flex;
+    }
+
+    .mobile-page-navigation {
+        display: flex;
+    }
 
 
 }
