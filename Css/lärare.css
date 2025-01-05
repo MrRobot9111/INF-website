@@ -87,3 +87,78 @@ h1{
     }
 }
 
+@media screen and (max-width: 500px) {
+    
+    .pic-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-self: center;
+        width: 97.5%;
+
+    }
+
+    .pic-text p, h2 {
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+        padding-top: 2.5%;
+    }
+
+    .pic-text p {
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+        padding-bottom: 5%;
+        padding-top: 1.25%;
+    }
+
+    .information-section {
+        margin-top: 2.5%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        margin-bottom: 2.5%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .information-section h1 {
+        padding-left: 2.5%;
+        margin-left: 2.5%;
+    }
+
+    #jonas-text-bild{
+        margin: 0%;
+        margin-bottom: 10%;
+    }
+
+    #mikael-text-bild {
+        margin: 0%;
+        flex-direction: column-reverse;
+    }
+
+
+    #pic-mikael, #pic-jonas {
+        width: 100%;
+        height: auto;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    #pic-jonas {
+        background-image: url("../Images/jonas_mobile.png");
+    }
+
+    #pic-mikael {
+        background-image: url("../Images/eklund_mobile.png");
+    } 
+
+    .desktop-footer {
+        display: none;
+    }
+
+    #desktop-page-navigation {
+        display: none;
+    }
+
+}
+
+

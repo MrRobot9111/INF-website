@@ -14,15 +14,17 @@
     <title></title>
 </head>
 <header>
-
+   <nav class="mobile-nav">
+      <img id="tycho-brahe-nav-icon" src="Images/Icons/mobile-tycho-brahe-nav.svg">
+      <h2>INF</h2>
+      <img id="hamburger-menu-icon" src="Images/Icons/White-Hamburger.svg">
+   </nav>
 </header>
 <body>
 
    <section class="information-section">
-      <h1>Vad är teknikprogrammet?</h1>
-
-            <div class="pic-text" id="jonas-text-bild">
-               
+      <h1>Lärare</h1>
+            <div class="pic-text" id="jonas-text-bild">       
                <img id="pic-jonas" src="Images/Jonas_Lärare.png" alt="">
                <div class="text">
                   <h2>Jonas Ströberg</h2>
@@ -31,23 +33,25 @@
                      <span>Han uppmuntrar inte bara till att lära sig dagens lösningar utan att försöka tänka ut nästa generations idéer och förbättringar.</span> 
                      <span>Ströbergs undervisning är fylld av diskussioner om innovation, framtidsteknik och hur varje elev kan påverka världen på ett betydande sätt.</span>
                   </p>
+               </div>
+
             </div>
-            </div>
+
             <div class="pic-text" id="mikael-text-bild">
                <div class="text">
                   <h2>Mikael Eklund</h2>
                   <p class="styled-paragraph">
-                     <span>Teknikprogrammet är ett högskoleförberedande program. Efter examen från programmet har du kunskaper för högskolestudier inom främst teknik och matematik men även inom andra områden.</span> 
-                     <span>Teknikprogrammet ger dig en bred behörighet om du vill studera vidare.</span>
+                     <span>Mikael inleder ofta sina lektioner med tankeväckande frågor som "Vad händer egentligen när du klickar på en länk?" eller "Hur kan ett gränssnitt påverka ditt undermedvetna?". </span> 
+                     <span>Hans ögon lyser av entusiasm när han dyker djupt in i ämnen som nätverksprotokoll, användarcentrerad design och datadriven innovation.</span>
                   </p>
                </div>
                <img id="pic-mikael" src="Images/Mikael_Lärare.png" alt="">
             </div>
-      </section>
+   </section>
 
 
              <!--Arrow-Nav-->
-             <div class="progress-container">
+             <div id="desktop-page-navigation" class="progress-container">
                <svg class="arrow-path" width="70" height="70" viewBox="0 0 200 200">
                    <path
                       d="M50 70 L100 130 L150 70"
@@ -68,7 +72,7 @@
                 </svg>
              </div>
 
-             <footer>
+             <footer class="desktop-footer">
                <div id="footer-container">
                   <div class="information-container">
                      <p class="footer-text">Information</p>
@@ -85,5 +89,38 @@
                   <img src="Images/footer-logo.svg" alt="">
                </div>
              </footer>
+
+                   <!-- Mobile page navigation -->   
+      <section class="mobile-page-navigation">
+         <svg class="arrow-back" width="70" height="70" viewBox="0 0 200 200">
+            <path
+               d="M50 70 L100 130 L150 70"
+               stroke="black"
+               fill="none"
+               stroke-width="20"
+               stroke-linecap="round"
+               />
+         </svg>
+         <p>Lärare</p>
+         <svg class="arrow-foreward" width="70" height="70" viewBox="0 0 200 200">
+            <path
+               d="M50 130 L100 70 L150 130"
+               stroke="black"
+               fill="none"
+               stroke-width="20"
+               stroke-linecap="round"
+               />
+         </svg>
+      </section>
+      <footer class="mobile-footer">
+         <div class="footer-information-div">
+            <p>Besöksadress</p>
+            <p>Studievägen 2, 251 89 <br> Helsingborg</p>
+         </div>
+         <div class="footer-information-div">
+            <p>Kontakta oss</p>
+            <p>042-10 50 00</p>
+         </div>     
+      </footer>
 </body>
 </html>
