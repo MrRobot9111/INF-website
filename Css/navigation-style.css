@@ -82,4 +82,48 @@ nav a:hover::after {
     .nav-bar {
         display: none;
     }
+
+    /* Style the dropdown from the hamburger menu */
+    .nav-dropdown {
+        position: relative; /* Establish stacking context */
+        left: 0;
+        top: -20px;
+        width: 100vw; /* Full width of the viewport */
+        height: 100vh; /* Full height of the viewport */
+        background-color: white;
+        z-index: 5; /* Lower than the links */
+    }
+    
+    #nav-blue-triangle {
+        width: 99.9%;
+        height: 100%;
+        position: absolute; /* Ensure it is behind the links */
+        z-index: 0;
+    }
+    
+    .nav-dropdown-links {
+        position: relative;
+        z-index: 10; /* Higher than the triangle */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-left: 2.5%;
+        margin-top: 5%;
+        height: 40vh;
+        font-size: var(--nav_size);
+    }
+    
+    .nav-dropdown-links a {
+        text-decoration: none;
+        color: black;
+        font-weight: 600;
+        position: relative;
+        z-index: 11; /* Ensure links stay above everything */
+    }
+    
+    .nav-dropdown-links a:hover {
+        color: var(--orange);
+    }
+    
+
 }

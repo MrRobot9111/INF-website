@@ -19,6 +19,7 @@
     :root {
         --h1_size: 32px; /* Reduced further for smaller screens */
         --p_size: 16px; /* Slightly smaller paragraph size */
+        --nav_size: 24px;
         --h2_size: 28px; /* Adjust h2 size proportionally */
         --tycho-nav-blue: #080C26;
         --website-grey: #D2D2D2;
