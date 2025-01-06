@@ -138,7 +138,7 @@ nav a:hover::after {
     }
 
     .exit-icon {
-        width: 70px;
+        width: 55px;
         position: absolute;
         bottom: 10%;
         left: 50%;
