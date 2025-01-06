@@ -117,6 +117,34 @@ nav a:hover::after {
         position: relative;
         z-index: 11; /* Ensure links stay above everything */
     }
+
+    .grey-box {
+        background-color: var(--website-grey);
+        width: 200px;
+        height: 200px;
+        z-index: 10000;
+        position: absolute;
+        top: 45%;                  /* Move 50% down from the top of the screen */
+        left: 25%;                 /* Move 50% from the left of the screen */
+        transform: rotate(25deg);
+        border-radius: 20px;
+    }
+
+    #cta-button {
+        position: relative;        /* Position relative to its normal flow */
+        top: 40%;                  /* Move 50% down from its container */
+        left: 7.5%;                 /* Move 50% right from its container */
+        font-size: var(--nav_size);
+    }
+
+    .exit-icon {
+        width: 70px;
+        position: absolute;
+        bottom: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%); /* Adjust for the element's size to center exactly */
+        z-index: 10000;
+    }
     
     .nav-dropdown-links a:hover {
         color: var(--orange);
