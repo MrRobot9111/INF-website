@@ -30,6 +30,10 @@
 
  @media screen and (max-width: 500px) {
 
+  #h1-Inrikting {
+    margin-top: 25%;
+  }
+
    .pic-text {
      width: 100%;
 

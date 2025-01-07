@@ -85,6 +85,7 @@ h1{
 
     #mobile-header {
         display: block;
+        margin-top: 25%;
     }
 
     #desktop-header {
