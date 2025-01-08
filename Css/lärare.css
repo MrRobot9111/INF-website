@@ -62,6 +62,9 @@ h1{
     z-index: 10;
 }
 
+.information-section {
+
+}
 
 @media screen and (max-width: 1920px) {
     #pic-mikael, #pic-jonas{
@@ -86,12 +89,14 @@ h1{
         margin-left: 10%;
     }
 
-    .header-mobile {
-        margin-top: 25%;
-    }
+
 }
 
 @media screen and (max-width: 500px) {
+
+    .header-mobile {
+        margin-top: 25%;
+    }
     
     .pic-text {
         display: flex;

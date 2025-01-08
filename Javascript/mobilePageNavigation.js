@@ -2,6 +2,8 @@
 
 if (isMobile()) {
 
+    console.log("Is mobile")
+
     const forewardArrow = document.querySelector(".arrow-foreward");
     const backwardArrow = document.querySelector(".arrow-back");
 

@@ -73,7 +73,7 @@
     overflow-x: hidden; /* Hide horizontal scrolling */
 }
 
-.exit-icon {
+.exit-icon-desktop {
     z-index: 20; /* Ensures it is on top of the image */
     cursor: pointer; /* Optional: makes it look clickable */
     top: -3.5%;
@@ -82,7 +82,7 @@
     width: 5.5%;
 }
 
-.exit-icon:hover {
+.exit-icon-desktop:hover {
     width: 6%;
 }
 

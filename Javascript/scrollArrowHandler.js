@@ -1,8 +1,5 @@
 // Function to detect mobile devices
-const isMobile = () => {
-    return /Mobi|Android|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i.test(navigator.userAgent) 
-        || window.innerWidth <= 660; // You can adjust the screen width threshold if needed
-};
+const isMobile = () => window.matchMedia("(max-width: 500px)").matches;
 
 if (!isMobile()) {
     const path = document.querySelector(".arrow-path path");

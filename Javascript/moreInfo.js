@@ -190,9 +190,11 @@ const courseData = {
   const scrim = document.getElementById('scrim');
   const cards = document.querySelectorAll(".plus-icon");
   const expandedSection = document.querySelector(".expanded-information");
-  const exitIcon = document.querySelector(".exit-icon");
+  const exitIcon = document.querySelector(".exit-icon-desktop");
   const expandedHeader = document.querySelector(".expanded-information-header");
   const expandedParagraph = document.querySelector(".expanded-information-paragraph");
+
+  console.log(exitIcon);
 
   // Hide the explanded information card from the beggining
 
@@ -222,6 +224,7 @@ const courseData = {
   
   // Hide the expanded section when the exit icon is clicked
   exitIcon.addEventListener("click", () => {
+   console.log("Exit icon clicked");
     expandedSection.classList.add("hide-more-information-card");
     scrim.classList.remove('active');
   });
