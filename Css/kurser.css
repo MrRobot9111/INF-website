@@ -184,7 +184,7 @@
     }
 
     .plus-icon {
-        width: 19%;
+        width: 15%;
         right: -7.5%;
         top: -5%
     }
@@ -202,15 +202,35 @@
     }
 
     .expanded-information-div {
-        height: 90%;
+        height: 100%;
         padding-left: 10px;
         padding-right: 10px;
+        max-height: 100%;
+    }
+
+    .expanded-information-div ol {
+        padding-left: 15px;
+    }
+
+    .expanded-information-div li {
+        padding-left: 0px;
+        margin-bottom: 20px;
+    }
+
+    .expanded-information-div li ul {
+        padding-left: 20px;
+        margin-top: 10px;
+    }
+
+    .expanded-information-div li ul li {
+        margin-top: 0px;
+        margin-bottom: 0px;
     }
 
     .exit-icon-desktop {
-        width: 25%;
-        right: -10%;
-        top: -5%;
+        width: 20%;
+        right: -7.5%;
+        top: -4%;
     }
 
     .exit-icon-desktop:hover {
