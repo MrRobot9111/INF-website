@@ -193,7 +193,7 @@
 
     .expanded-information {
         position: fixed;
-        width: auto;
+        width: 85%;
         top: 50%;
         left: 50%;
         height: 90%;
