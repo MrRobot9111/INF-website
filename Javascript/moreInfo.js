@@ -187,6 +187,7 @@ const courseData = {
   };
   
   // Select elements
+  const htmlBody = document.querySelector("html")
   const scrim = document.getElementById('scrim');
   const cards = document.querySelectorAll(".plus-icon");
   const expandedSection = document.querySelector(".expanded-information");
@@ -218,6 +219,12 @@ const courseData = {
   
         // Show the expanded section
         expandedSection.classList.remove("hide-more-information-card");
+
+        if (isMobile()) {
+            // Add overflow-y hidden on the body once the scrim is down
+            htmlBody.classList.add("hide-overflow-y");
+        }
+
       }
     });
   });
@@ -227,5 +234,9 @@ const courseData = {
    console.log("Exit icon clicked");
     expandedSection.classList.add("hide-more-information-card");
     scrim.classList.remove('active');
+   if (isMobile()) {
+      // Remove overflow-y hidden on the body once the scrim is down
+      htmlBody.classList.remove("hide-overflow-y");
+   }
   });
   
