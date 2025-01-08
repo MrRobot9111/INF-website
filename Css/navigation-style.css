@@ -111,6 +111,7 @@ nav a {
         margin-left: 2.5%;
         margin-top: 5%;
         height: 40vh;
+        width: 75%;
         font-size: var(--nav_size);
     }
     
