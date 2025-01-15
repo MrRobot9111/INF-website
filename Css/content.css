@@ -1,17 +1,17 @@
 #hero-text-div {
-    margin-left: 60px;
-    margin-top: 125px;
+    margin-left: 2.5%;
+    margin-top: 5%;
 }
 
 #introductionary-paragrahp-div {
-    width: 37%;
-    margin-top: 80px;
+    width: 65%;
+    margin-top: 2.5%;
 }
 
 
 
 .list-start-paragraphs-div {
-    margin-top: 80px;
+    margin-top: 2.5%;
     display: flex;
     flex-direction: column;
     align-content: flex-start;
@@ -23,6 +23,7 @@
     align-items: center;
     align-self: flex-start;
     gap: 10px;
+    width: 50%;
 
 }
 
