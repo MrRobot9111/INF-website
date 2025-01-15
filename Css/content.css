@@ -1,17 +1,17 @@
 #hero-text-div {
-    margin-left: 2.5%;
-    margin-top: 5%;
+    margin-left: 60px;
+    margin-top: 125px;
 }
 
 #introductionary-paragrahp-div {
-    width: 65%;
-    margin-top: 2.5%;
+    width: 37%;
+    margin-top: 80px;
 }
 
 
 
 .list-start-paragraphs-div {
-    margin-top: 2.5%;
+    margin-top: 80px;
     display: flex;
     flex-direction: column;
     align-content: flex-start;
@@ -23,7 +23,6 @@
     align-items: center;
     align-self: flex-start;
     gap: 10px;
-    width: 50%;
 
 }
 
@@ -69,6 +68,49 @@
 .mobile-page-navigation {
     display: none;
 }
+
+/* Laptop */ 
+
+@media screen and (max-width: 1280px){
+    #hero-text-div {
+        margin-left: 2.5%;
+        margin-top: 2.5%;
+        margin-bottom: 5%;
+    }
+    
+    #introductionary-paragrahp-div {
+        width: 65%;
+        margin-top: 2.5%;
+    }
+    
+    
+    
+    .list-start-paragraphs-div {
+        margin-top: 2.5%;
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+    }
+    
+    .star-list-div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-self: flex-start;
+        gap: 10px;
+        width: 50%;
+    
+    }
+
+    #hero-page-logo{
+        position: absolute;
+        top: 35%;
+        right: 5%;
+        height: 50%;
+    }
+
+}
+
 
 /* Phone layout */
 

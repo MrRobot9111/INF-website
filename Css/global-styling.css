@@ -2,7 +2,7 @@
 body {
     margin: 0px;
     padding: 0px;
-    overflow: hidden;
+    overflow: auto;
     /* overflow: hidden; /* Prevent scrolling on the page */
 }
 
@@ -113,6 +113,10 @@ h2{
     100% {
         opacity: 0;  /* Fully transparent again */
     }
+}
+
+@media screen and (max-width: 1280px) {
+
 }
 
 @media screen and (max-width: 500px) {
