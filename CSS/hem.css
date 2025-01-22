@@ -196,6 +196,9 @@
         display: flex;
     }
 
+    .star-list-div {
+        width: 90%;
+    }
 
 }
 

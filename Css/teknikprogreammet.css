@@ -54,6 +54,16 @@ h1{
 
 /* Just for testing */ 
 @media screen and (max-width: 1920px) {
+
+    .styled-paragraph {
+        overflow-y: auto;
+        padding-right: 40px;
+    }
+
+    .styled-paragraph span {
+        margin-bottom: 20px;
+    }
+
     #pic-text-rebecka {
         width: 60%;
         margin-left: 26%;
@@ -69,12 +79,12 @@ h1{
 /* Laptop */ 
 @media screen and (max-width: 1280px) {
     #pic-text-rebecka {
-        height: 20vh;
+        height: 25vh;
         width: 60%;
         margin-left: 26%;
     }
     #pic-text-samuel {
-        height: 41vh;
+        height: 30vh;
         width: auto;
         margin-bottom: 25px;
         margin-left: 12%;
@@ -99,7 +109,10 @@ h1{
         margin: 0 auto; /* Center section if needed */
     }
 
-
+    .styled-paragraph {
+        overflow-y: unset;
+        padding-right: 40px;
+    }
 
     #mobile-header {
         display: block;
@@ -156,7 +169,4 @@ h1{
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
     }
-
-
-
 }

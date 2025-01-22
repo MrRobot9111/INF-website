@@ -15,6 +15,7 @@
    width: 50%;
  }
 
+
  #inrikting-text {
    background: var(--grey);
    margin-left: 2%;
@@ -26,6 +27,31 @@
 
  h1 {
    text-align: center;
+ }
+
+ @media screen and (max-width: 1280px) {
+    section {
+      width: 80%;
+    }
+
+    #inriktning-pic {
+      width: 50%;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+      background-image: url("../Images/inriktning_laptop.png");
+    }
+
+    .pic-text {
+      flex-direction: row;
+      width: 100%;
+    }
+
+
+    .textContainer {
+      overflow-y: auto;
+    }
+
+
  }
 
  @media screen and (max-width: 500px) {

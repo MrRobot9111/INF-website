@@ -77,6 +77,15 @@ nav a {
 
 .nav-dropdown {
     display: none;
+
+
+}
+
+@media screen AND (max-width: 1280px){
+.nav-bar{
+    margin-left:1% ;
+    gap: 3%;
+}
 }
 
 @media screen and (max-width: 500px) {
