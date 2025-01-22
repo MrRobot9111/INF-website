@@ -133,6 +133,7 @@ h1{
     .pic-text p {
         margin-left: 2.5%;
         margin-right: 2.5%; 
+
     }
 
     .pic-text {
@@ -145,8 +146,9 @@ h1{
     }
 
     #pic-text-samuel, #pic-text-rebecka {
-        margin-left: 0%;
-        margin-right: 0%;
+        height: auto;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 
     #pic-text-rebecka {
