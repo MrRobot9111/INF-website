@@ -2,6 +2,8 @@
 const isMobile = () => window.matchMedia("(max-width: 500px)").matches;
 
 if (!isMobile()) {
+    const scrollockElements = document.querySelectorAll(".scroll-lock-element"); // Add this class to elements that are going to disable scroll on the page
+    let isHovering = false; // Disable page swith scroll
     const path = document.querySelector(".arrow-path path");
     const pathBackWards = document.querySelector(".arrow-path-backwards path");
     const currentNavItem = null;
@@ -87,10 +89,27 @@ if (!isMobile()) {
     let progressBackwards = 0; // Progress for backward scroll
     
     let scrollLock = false; // Initialize the scroll lock
+
+    // Add event listeners to each element
+    scrollockElements.forEach(scrollockElements => {
+        scrollockElements.addEventListener('mouseenter', () => {
+            isHovering = true; // Set to true when mouse enters
+            console.log('Hovering:', isHovering);
+        });
+
+        scrollockElements.addEventListener('mouseleave', () => {
+            isHovering = false; // Set to false when mouse leaves
+            console.log('Hovering:', isHovering);
+        });
+    });
+    
     
     document.addEventListener("wheel", (event) => {
         if (scrollLock) return; // If the lock is active, ignore the event
-    
+        
+        // Add class to elements that disable scroll when person is hovering hover them
+        if (isHovering) return;
+
         const scrim = document.getElementById("scrim");
         
         // Check if the scrim exists and is visible

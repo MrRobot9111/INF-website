@@ -92,6 +92,40 @@ h1{
 
 }
 
+@media screen and (max-width: 1280px) {
+    .text {
+        overflow-y: auto;
+    }
+
+    .header-mobile {
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+    .pic-text {
+        height: 150px;
+        border-radius: 15px;
+    }
+
+    #pic-jonas {
+        height: 150px;
+    }
+
+    #pic-mikael {
+        height: 150px;
+    }
+
+    .styled-paragraph span {
+        margin-bottom: 10px;
+    }
+    #mikael-text-bild {
+        margin-left: 12%;
+    }
+    #footer-container {
+        height: 14%;
+    }
+}
+
 @media screen and (max-width: 500px) {
 
     .header-mobile {
@@ -104,7 +138,7 @@ h1{
         align-items: center;
         align-self: center;
         width: 97.5%;
-
+        height: auto;
     }
 
     .pic-text p, h2 {

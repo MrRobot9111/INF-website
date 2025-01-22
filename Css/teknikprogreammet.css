@@ -79,9 +79,9 @@ h1{
 /* Laptop */ 
 @media screen and (max-width: 1280px) {
     #pic-text-rebecka {
-        height: 25vh;
-        width: 60%;
-        margin-left: 26%;
+        height: 30vh;
+        width: 70%;
+        margin-left: 22%;
     }
     #pic-text-samuel {
         height: 30vh;
@@ -89,6 +89,10 @@ h1{
         margin-bottom: 25px;
         margin-left: 12%;
         margin-right: 8%;
+    }
+
+    .pic-tex {
+        border-radius: 10px;
     }
 
 }

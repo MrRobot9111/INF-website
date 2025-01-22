@@ -58,11 +58,19 @@
 
   #h1-Inrikting {
     margin-top: 25%;
+
+  }
+
+  #inriktning-pic {
+    width: 100%;
+    background-image: url("../Images/Inrikting.png");
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0px;
   }
 
    .pic-text {
      width: 100%;
-
+     flex-direction: column;
    }
 
    section {
