@@ -26,6 +26,7 @@ navItems.forEach(item => {
 
 // Add the "Ansök Nu" button
 const ctaLink = document.createElement('a');
+ctaLink.id = 'ctaLink'
 ctaLink.href = '';
 
 const ctaButton = document.createElement('button');

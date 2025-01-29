@@ -22,7 +22,7 @@ nav a {
     position: relative; /* Needed for positioning the ::after element */
 }
 
-.nav-bar:not(#cta-button) a::after {
+.nav-bar a::after {
     content: '';
     position: absolute;
     bottom: 17px; /* Distance from the text */
@@ -34,12 +34,12 @@ nav a {
     transition: all 0.3s ease; /* Smooth animation for both hover and active states */
 }
 
-.nav-bar a:hover:not(#cta-button)::after {
+.nav-bar a:hover:not(#ctaLink)::after {
     width: 100%; /* Extend underline width on hover */
     transform: scaleX(1); /* Show the underline */
 }
 
-.underline-current-nav-link:not(#cta-button)::after {
+.underline-current-nav-link::after {
     content: '';
     position: absolute;
     left: 0;
