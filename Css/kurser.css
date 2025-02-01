@@ -1,3 +1,7 @@
+.information-cards-section-carousel {
+    display: none;
+}
+
 .scrim {
     position: fixed;
     top: 0;
@@ -119,25 +123,6 @@
 
 @media screen and (max-width: 1280px){
 
-    h1{
-        margin: 0;
-    }
-    .information-cards-section{
-        margin: 0%;
-        margin-top: 15px;
-    }
-
-    .information-card{
-        width: 170px
-    }
-    .information-card-image{
-        width:170px
-    }
-
-    .information-cards-section{
-        height: 81vh;
-    }
-
     /* Carousel style */
 
     .information-cards-section {
@@ -148,69 +133,56 @@
     .information-cards-section h1 {
         display: none;
     }
-
-    @import url("https://fonts.googleapis.com/css?family=Libre+Franklin:300,400,600,700,800&display=swap");
-
-    html, body {
-        font-family: "Libre Franklin", sans-serif;
-    }
     
-    div.carousel-nav-icon > svg {
-        height: 48px;
-        width: 48px;
-    }
-    
-    html[data-bs-theme="dark"] div.carousel-nav-icon > svg {
-        fill: #FFF !important;
-    }
-    
-    @media (max-width: 767px) {
-        .carousel-inner .carousel-item > div {
-            display: none;
-        }
-        .carousel-inner .carousel-item > div:first-child {
-            display: block;
-        }
-    }
-    
-    .carousel-inner .carousel-item.active,
-    .carousel-inner .carousel-item-next,
-    .carousel-inner .carousel-item-prev {
+    .information-cards-section-carousel {
         display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-    
-    /* medium and up screens */
-    @media (min-width: 768px) {
-    
-        .carousel-inner .carousel-item-end.active,
-        .carousel-inner .carousel-item-next {
-            transform: translateX(33%);
-        }
-    
-        .carousel-inner .carousel-item-start.active, 
-        .carousel-inner .carousel-item-prev {
-            transform: translateX(-33%);
-        }
-    }
-    
-    .carousel-inner .carousel-item-end,
-    .carousel-inner .carousel-item-start { 
-        transform: translateX(0);
-    }
-    
-    /* Nothing below this point is needed. */
-    .dark-mode-toggle {
-        bottom: 3%;
-        right: 3%;
-        z-index: 10;
-    }
-    .dark-mode-toggle,
-    .dark-mode-toggle > *, 
-    .dark-mode-toggle > * > * {
-        cursor: pointer;
-    }
-    
 
+    .carousel-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .carousel {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        width: 300%;
+        margin-left: 24vw;
+    }
+
+    .information-card {
+        width: 20vw;
+    }
+
+    .information-card .information-card-image {
+        width: 20vw;
+    }
+
+    .carousel-button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+        z-index: 100;
+    }
+
+    .prev {
+        left: 10px;
+    }
+
+    .next {
+        right: 10px;
+    }
 }
 
 /* 2560x1440 */
@@ -248,6 +220,16 @@
 
 @media screen and (max-width: 500px) {
 
+
+    .information-cards-section-carousel {
+        display: none;
+    }
+
+    .information-cards-section {
+        display: flex;
+        flex-direction: column;
+    }
+
     body {
         height: 100%;
     }
@@ -263,8 +245,8 @@
         width: 75vw;
     }
 
-    .information-card-image{
-        width: 100%;    
+    .information-card .information-card-image {
+        width: 100%;
     }
 
     .information-upper {
@@ -279,7 +261,7 @@
 
     .information-cards-section {
         height: 100%;
-        margin-top: 80px;
+        margin-top: 120px;
     }
 
     /* Adjust for the margin of the cards */ 
@@ -345,4 +327,3 @@
         overflow-y: hidden;
     }
 }
-

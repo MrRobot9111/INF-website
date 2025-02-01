@@ -13,15 +13,13 @@
       <script src="Javascript/moreInfo.js" defer></script>
       <script src="Javascript/mobilePageNavigation.js" defer></script>
       <script src="Javascript/mobileNavBar.js" defer></script>
+      <script src="Javascript/carousel.js" defer></script>
       <link rel="stylesheet" href="Css/site-var.css">
       <link rel="stylesheet" href="Css/navigation-style.css">
       <link rel="stylesheet" href="Css/global-styling.css">
       <link rel="stylesheet" href="Css/kurser.css">
       <!-- Latest compiled and minified CSS -->
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-      <!-- Latest compiled JavaScript -->
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
    </head>
    <header>
       <nav class="mobile-nav-section">
@@ -64,104 +62,53 @@
          </div>
       </section>
 
-      <section class="my-5">
-         <div class="container">
-             <div class="row mx-auto my-auto justify-content-center">
-                 <div class="col">
-                     <div class="row">
-                         <!-- Left Arrow -->
-                         <div class="col-1 d-flex align-items-center justify-content-center">
-                             <a role="button" href="#recipeCarousel" data-bs-slide="prev">
-                                 <div class="carousel-nav-icon">
-                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129">
-                                         <path d="m88.6,121.3c0.8,0.8 1.8,1.2 2.9,1.2s2.1-0.4 2.9-1.2c1.6-1.6 1.6-4.2 0-5.8l-51-51 51-51c1.6-1.6 1.6-4.2 0-5.8s-4.2-1.6-5.8,0l-54,53.9c-1.6,1.6-1.6,4.2 0,5.8l54,53.9z"/>
-                                     </svg>
-                                 </div>
-                             </a>
-                         </div>
-     
-                         <div class="col-10">
-                             <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
-                                 <div class="carousel-inner d-flex">
-                                     <!-- First Slide -->
-                                     <div class="carousel-item active">
-                                         <div class="row">
-                                             <div class="col-md-4">
-                                                 <div class="card">
-                                                     <div class="card-img">
-                                                         <img src="Images/desktop.png" class="img-fluid">
-                                                     </div>
-                                                 </div>
-                                             </div>
-                                             <div class="col-md-4">
-                                                 <div class="card">
-                                                     <div class="card-img">
-                                                         <img src="Images/jonas_working.png" class="img-fluid">
-                                                     </div>
-                                                 </div>
-                                             </div>
-                                             <div class="col-md-4">
-                                                 <div class="card">
-                                                     <div class="card-img">
-                                                         <img src="Images/snake_game.png" class="img-fluid">
-                                                     </div>
-                                                 </div>
-                                             </div>
-                                         </div>
-                                     </div>
-     
-                                     <!-- Second Slide -->
-                                     <div class="carousel-item">
-                                         <div class="row">
-                                             <div class="col-md-4">
-                                                 <div class="card">
-                                                     <div class="card-img">
-                                                         <img src="Images/webutveckling.png" class="img-fluid">
-                                                     </div>
-                                                 </div>
-                                             </div>
-                                             <div class="col-md-4">
-                                                 <div class="card">
-                                                     <div class="card-img">
-                                                         <img src="Images/sned_skärm.png" class="img-fluid">
-                                                     </div>
-                                                 </div>
-                                             </div>
-                                             <div class="col-md-4">
-                                                 <div class="card">
-                                                     <div class="card-img">
-                                                         <img src="Images/doors.png" class="img-fluid">
-                                                     </div>
-                                                 </div>
-                                             </div>
-                                         </div>
-                                     </div>
-     
-                                 </div>
-     
+      <section class="information-cards-section-carousel">
+        <h1>Kurser</h1>
+        <div class="carousel-container">
+            <button id="carousel-button-prev" class="carousel-button prev">&#10094;</button>
+            <div class="carousel">
+                <div class="information-card">
+                    <img src="Images/Icons/plus.png" class="plus-icon" data-course="informationsteknik">
+                    <img src="Images/desktop.png" class="information-card-image">
+                    <p>Informationsteknik nivå 1</p>
+                    <p>100ht</p>
+                </div>
+                <div class="information-card">
+                    <img src="Images/Icons/plus.png" class="plus-icon" data-course="programmering-nivå-1">
+                    <img src="Images/jonas_working.png" class="information-card-image">
+                    <p>Programmering nivå 1</p>
+                    <p>100ht</p>
+                </div>
+                <div class="information-card">
+                    <img src="Images/Icons/plus.png" class="plus-icon" data-course="tillämpad">
+                    <img src="Images/snake_game.png" class="information-card-image">
+                    <p>Tillämpad programmering nivå 1</p>
+                    <p>100ht</p>
+                </div>
+                <div class="information-card">
+                    <img src="Images/Icons/plus.png" class="plus-icon" data-course="webutveckling">
+                    <img src="Images/webutveckling.png" class="information-card-image">
+                    <p>Webutveckling nivå 1</p>
+                    <p>100vt</p>
+                </div>
+                <div class="information-card">
+                    <img src="Images/Icons/plus.png" class="plus-icon" data-course="programmering-nivå-2">
+                    <img src="Images/sned_skärm.png" class="information-card-image">
+                    <p>Programmering nivå 2</p>
+                    <p>100vt</p>
+                </div>
+                <div class="information-card">
+                    <img src="Images/Icons/plus.png" class="plus-icon" data-course="alternativ">
+                    <img src="Images/doors.png" class="information-card-image">
+                    <p>Alternativ</p>
+                    <p>100vt</p>
+                </div>
+            </div>
+            <button class="carousel-button next">&#10095;</button>
+        </div>
+    </section>
 
-     
-                             </div>
-                         </div>
-     
-                         <!-- Right Arrow -->
-                         <div class="col-1 d-flex align-items-center justify-content-center">
-                             <a role="button" href="#recipeCarousel" data-bs-slide="next">
-                                 <div class="carousel-nav-icon">
-                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129">
-                                         <path d="m40.4,121.3c-0.8,0.8-1.8,1.2-2.9,1.2s-2.1-0.4-2.9-1.2c-1.6-1.6-1.6-4.2 0-5.8l51-51-51-51c-1.6-1.6-1.6-4.2 0-5.8 1.6-1.6 4.2-1.6 5.8,0l53.9,53.9c1.6,1.6 1.6,4.2 0,5.8l-53.9,53.9z"/>
-                                     </svg>
-                                 </div>
-                             </a>
-                         </div>
-     
-                     </div>
-                 </div>
-             </div>
-         </div>
-     </section>
-     
-
+    
       <section class="information-cards-section">
 
          <h1>Kurser</h1>

@@ -1,5 +1,18 @@
 // Function to detect mobile devices
-const isMobile = () => window.matchMedia("(max-width: 500px)").matches;
+const c = () => window.matchMedia("(max-width: 500px)").matches;
+
+function isMobile() {
+    return (
+        // Check if the user agent matches common mobile devices
+        /Android|iPhone|iPad|iPod|Windows Phone|BlackBerry|Opera Mini|IEMobile/i.test(navigator.userAgent) ||
+        
+        // Check for touch capability (common in mobile devices)
+        (navigator.maxTouchPoints > 0 || "ontouchstart" in window) ||
+        
+        // Check if the screen size matches a mobile device
+        (window.matchMedia("(max-width: 768px)").matches)
+    );
+}
 
 if (!isMobile()) {
     const scrollockElements = document.querySelectorAll(".scroll-lock-element"); // Add this class to elements that are going to disable scroll on the page
