@@ -104,17 +104,26 @@ if (!isMobile()) {
     let scrollLock = false; // Initialize the scroll lock
 
     // Add event listeners to each element
-    scrollockElements.forEach(scrollockElements => {
-        scrollockElements.addEventListener('mouseenter', () => {
-            isHovering = true; // Set to true when mouse enters
-            console.log('Hovering:', isHovering);
-        });
 
-        scrollockElements.addEventListener('mouseleave', () => {
-            isHovering = false; // Set to false when mouse leaves
-            console.log('Hovering:', isHovering);
+    // 
+    if (window.innerWidth <= 1280) 
+        {
+        scrollockElements.forEach(scrollockElements => {
+            scrollockElements.addEventListener('mouseenter', () => {
+                isHovering = true; // Set to true when mouse enters
+                console.log('Hovering:', isHovering);
+            });
+    
+            scrollockElements.addEventListener('mouseleave', () => {
+                isHovering = false; // Set to false when mouse leaves
+                console.log('Hovering:', isHovering);
+            });
         });
-    });
+    } else {
+        isHovering = false;
+    }
+
+
     
     
     document.addEventListener("wheel", (event) => {

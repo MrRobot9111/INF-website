@@ -46,12 +46,15 @@ nav a {
     bottom: 17px; /* Distance from the text */
     width: 30%; /* Full underline width for the current item */
     height: 2px; /* Thickness */
-    background-color: var(--orange); /* Orange color for underline */
+    background-color: var(--orange-nav-link); /* Orange color for underline */
     transform: scaleX(1); /* Ensure it stays visible */
     transform-origin: left;
     transition: all 0.3s ease; /* Smooth animation */
 }
 
+.underline-current-nav-link {
+    color: var(--orange-nav-link);
+}
 
 
 #cta-button {
